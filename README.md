@@ -1,4 +1,4 @@
-# Movie App
+# Movie App(React)
 
 <https://jgiraffe.github.io/movie_app/>
 
