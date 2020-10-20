@@ -1,5 +1,7 @@
 /*
 < MEMO >
+react, prop-types, axios, gh-pages, react-router-dom
+
 1. component는 function과 class가 있고 <Food fav = "kimchi" asd = {true} /> 같이 호출 : JSX
  - JSX 문법 안에서 js를 쓰기위해 {}를 사용
  - fav, asd는 props
