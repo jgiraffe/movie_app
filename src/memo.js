@@ -28,4 +28,5 @@
  8-3. add script
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
+ 8-4. npm run deploy
 */
