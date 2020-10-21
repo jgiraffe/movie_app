@@ -69,9 +69,11 @@ npm run deploy
 ### 9. axios : http 통신 library
 비동기로 영화 정보를 가져오는 예시 
 ```
+
 getMovies = async () => {
+// movies.data.data.movies를 {data: {data: {movies}}}로 // ES6
+// api에 data가 2개임...
  const {
- // api에 data가 2개임...
   data: {
    data: { movies },
   },
@@ -81,3 +83,17 @@ getMovies = async () => {
 componentDidMount() { this.getMovies(); }
 render() { ... }
 ```
+### 10. prop-types : 말 그대로 props의 type을 검사해준다
+간단예시
+```
+function Movie({ id, year, title, summary, poster, genres }) {... }
+Movie.propTypes = {
+  id: PropTypes.number.isRequired,
+  year: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  poster: PropTypes.string.isRequired,
+  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+```
+
