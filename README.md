@@ -96,7 +96,7 @@ getMovies = async () => {
   data: {
    data: { movies },
   },
- } = await axios.get("주소");
+ } = await axios.get("json 주소");
  this.setState({ movies, isLoading: false });
  };
 componentDidMount() { this.getMovies(); }
