@@ -16,7 +16,7 @@
 - JSX 문법 안에서 js를 쓰기위해 {}를 사용
 - fav, asd는 props
 - function component는 props를 props로 받거나 {fav}로 받을 수 있다.
-- map 사용 예시
+- map 사용 예시 : React에서는 map으로 반복 component를 작성하는 경우 key가 필수!
 
 ```
 <div> { foodILike.map(dish => (<Food key={dish.id} />))} </div>
