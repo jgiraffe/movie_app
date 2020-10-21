@@ -11,7 +11,7 @@ nomard coders React JS Fundamentals Course
 ### library
 - react, prop-types, axios, gh-pages, react-router-dom
 
-### component, JSX
+### 1. component, JSX
 - component는 function component와 class component가 있다. 
 - JSX 예시
 ```
@@ -26,33 +26,33 @@ nomard coders React JS Fundamentals Course
    <div> { foodILike.map(dish => (<Food key={dish.id} />))} </div>
 ```
 
-### setState시 현재의 state에 접근하기 적절한 방법
+### 2. setState시 현재의 state에 접근하기 적절한 방법
 
 ```
 this.setState(current => ({ count: current.count + 1 }));
 ```
 
-### render 
+### 3. render : class component에서 쓰이며 return 필수!
 - 매순간 setState를 호출할 때 마다 react는 새로운 state와 함께 render()를 호출
 
-### Mounting : component가 태어나는 것
+### 4. Mounting : component가 태어나는 것
 
 - 호출 순서 : constructor() -> render() -> componentDidMount()
 
-### Updating : state를 변경할 때
+### 5. Updating : state를 변경할 때
 
 - 호출 순서 : render() -> componentDidUpdate()
 
-### Unmounting : component가 죽는 것
+### 6. Unmounting : component가 죽는 것
 
 - 호출 순서 : componentWillUnmount()
 
-### state 가져오기 (ES6)
+### 7. state 가져오기 (ES6)
 { }는 객체!
 ```
 const { isLoading } = this.state;
 ```
-### gh-pages
+### 8. gh-pages
 
 ```
 npm install gh-pages -g
@@ -69,4 +69,19 @@ package.json scrtipt에 추가
 실행
 ```
 npm run deploy
+```
+### 9. axios : http 통신 library
+비동기로 영화 정보를 가져오는 예시 
+```
+getMovies = async () => {
+ const {
+ // api에 data가 2개임...
+  data: {
+   data: { movies },
+  },
+ } = await axios.get("주소");
+ this.setState({ movies, isLoading: false });
+ };
+componentDidMount() { this.getMovies(); }
+render() { ... }
 ```
