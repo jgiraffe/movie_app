@@ -1,4 +1,4 @@
-# Movie App (nomard coders React JS Fundamentals Course)
+# Movie App (Nomadcoders React Fundamentals Course)
 
 <https://jgiraffe.github.io/movie_app/>
 
