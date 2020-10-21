@@ -5,7 +5,13 @@
 ## 공부한 내용
 
 ### 0. library
-- react, prop-types, axios, gh-pages, react-router-dom
+```
+npm i react
+npm i prop-types
+npm i axios
+npm i gh-pages
+npm i react-router-dom
+```
 
 ### 1. component, JSX
 - function component
