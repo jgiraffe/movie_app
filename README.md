@@ -41,18 +41,18 @@ const element = <h1>Hello, world!</h1>;
 this.setState(current => ({ count: current.count + 1 }));
 ```
 
-### 4. render : class component에서 쓰이며 return 필수!
+### 4. render #class_component
 - 매순간 setState를 호출할 때 마다 react는 새로운 state와 함께 render()를 호출
 
-### 5. Mounting : component가 태어나는 것
+### 5. Mounting : component가 태어나는 것 #class_component
 
 - 호출 순서 : constructor() -> render() -> componentDidMount()
 
-### 6. Updating : state를 변경할 때
+### 6. Updating : state를 변경할 때 #class_component
 
 - 호출 순서 : render() -> componentDidUpdate()
 
-### 7. Unmounting : component가 죽는 것
+### 7. Unmounting : component가 죽는 것 #class_component
 
 - componentWillUnmount() : 죽으면 호출 됨
 
