@@ -43,7 +43,7 @@ this.setState(current => ({ count: current.count + 1 }));
 
 ### 7. Unmounting : component가 죽는 것
 
-- 호출 순서 : componentWillUnmount()
+- componentWillUnmount() : 죽으면 호출 됨
 
 ### 8. state 가져오기 (ES6)
 { }는 객체!
