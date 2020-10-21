@@ -16,39 +16,40 @@
 - JSX 문법 안에서 js를 쓰기위해 {}를 사용
 - fav, asd는 props
 - function component는 props를 props로 받거나 {fav}로 받을 수 있다.
-- map 사용 예시 : React에서는 map으로 반복 component를 작성하는 경우 key가 필수!
+### 2. 아주 유용한 map
+- React에서는 map으로 반복 component를 작성하는 경우 key가 필수!
 
 ```
 <div> { foodILike.map(dish => (<Food key={dish.id} />))} </div>
 ```
 
-### 2. setState시 현재의 state에 접근하기 적절한 방법
+### 3. setState시 현재의 state에 접근하기 적절한 방법
 
 ```
 this.setState(current => ({ count: current.count + 1 }));
 ```
 
-### 3. render : class component에서 쓰이며 return 필수!
+### 4. render : class component에서 쓰이며 return 필수!
 - 매순간 setState를 호출할 때 마다 react는 새로운 state와 함께 render()를 호출
 
-### 4. Mounting : component가 태어나는 것
+### 5. Mounting : component가 태어나는 것
 
 - 호출 순서 : constructor() -> render() -> componentDidMount()
 
-### 5. Updating : state를 변경할 때
+### 6. Updating : state를 변경할 때
 
 - 호출 순서 : render() -> componentDidUpdate()
 
-### 6. Unmounting : component가 죽는 것
+### 7. Unmounting : component가 죽는 것
 
 - 호출 순서 : componentWillUnmount()
 
-### 7. state 가져오기 (ES6)
+### 8. state 가져오기 (ES6)
 { }는 객체!
 ```
 const { isLoading } = this.state;
 ```
-### 8. gh-pages
+### 9. gh-pages
 
 ```
 npm install gh-pages -g
@@ -66,7 +67,7 @@ package.json scrtipt에 추가
 ```
 npm run deploy
 ```
-### 9. axios : http 통신 library
+### 10. axios : http 통신 library
 비동기로 영화 정보를 가져오는 예시 
 ```
 
@@ -83,7 +84,7 @@ getMovies = async () => {
 componentDidMount() { this.getMovies(); }
 render() { ... }
 ```
-### 10. prop-types : 말 그대로 props의 type을 검사해준다
+### 11. prop-types : 말 그대로 props의 type을 검사해준다
 간단예시
 ```
 function Movie({ id, year, title, summary, poster, genres }) {... }
