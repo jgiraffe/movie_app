@@ -13,7 +13,10 @@ nomard coders React JS Fundamentals Course
 
 ### component, JSX
 - component는 function component와 class component가 있다. 
-- JSX 예시 : <Food fav = "kimchi" asd = {true} />
+- JSX 예시
+```
+<Food fav = "kimchi" asd = {true} />
+```
 - JSX 문법 안에서 js를 쓰기위해 {}를 사용
 - fav, asd는 props
 - function component는 props를 props로 받거나 {fav}로 받을 수 있다.
