@@ -15,7 +15,7 @@ const element = <h1>Hello, world!</h1>;
 <Food fav = "kimchi" />
 ```
 - 대문자로 시작하는 JSX 태그는 React 컴포넌트를 지정한다.
-- Food component(function)는 props를 props 또는 {fav}로 받으며 JSX를 return하는 형태 
+- Food component(function)는 props를 props 또는 {fav}로 받으며 JSX를 return하는 형태(로 유추도 가능)
 - JSX 문법 안에서 js를 쓰기위해 {}를 사용
 ### 2. 아주 유용한 map
 - React에서는 map으로 반복 component를 작성하는 경우 key가 필수!
