@@ -8,14 +8,15 @@
 - react, prop-types, axios, gh-pages, react-router-dom
 
 ### 1. component, JSX
-- component는 function component와 class component가 있다. 
-- JSX 예시
+- component 종류 : function, class 
+- JSX
 ```
-<Food fav = "kimchi" asd = {true} />
+const element = <h1>Hello, world!</h1>;
+// 대문자로 시작하는 JSX 태그는 React 컴포넌트를 지정한다.
+// Food component(function)는 props를 props 또는 {fav}로 받으며 JSX를 return하는 형태 
+// JSX 문법 안에서 js를 쓰기위해 {}를 사용
+<Food fav = "kimchi" />
 ```
-- JSX 문법 안에서 js를 쓰기위해 {}를 사용
-- fav, asd는 props
-- function component는 props를 props로 받거나 {fav}로 받을 수 있다.
 ### 2. 아주 유용한 map
 - React에서는 map으로 반복 component를 작성하는 경우 key가 필수!
 
