@@ -24,12 +24,12 @@ class 이름 extends React.Component {
 - JSX
 ```
 const element = <h1>Hello, world!</h1>;
+// 대문자로 시작하는 JSX 태그는 component를 지정한다.
 <Food fav = "kimchi" />
 ```
-- 대문자로 시작하는 JSX 태그는 React 컴포넌트를 지정한다.
-- JSX 문법 안에서 js를 쓰기위해 { }를 사용
 ### 2. 아주 유용한 map
 - React에서는 map으로 반복 component를 작성하는 경우 key가 필수!
+- JSX 문법 안에서 js를 쓰기 위해서 { }를 사용
 
 ```
 <div> { foodILike.map(dish => (<Food key={dish.id} />))} </div>
