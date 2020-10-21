@@ -8,10 +8,12 @@ nomard coders React JS Fundamentals Course
 
 ## 공부한 내용
 
-### library : react, prop-types, axios, gh-pages, react-router-dom
+### library
+- react, prop-types, axios, gh-pages, react-router-dom
 
-### component는 function과 class가 있고 <Food fav = "kimchi" asd = {true} /> 같이 호출 : JSX
-
+### component, JSX
+- component는 function component와 class component가 있다. 
+- JSX 예시 : <Food fav = "kimchi" asd = {true} />
 - JSX 문법 안에서 js를 쓰기위해 {}를 사용
 - fav, asd는 props
 - function component는 props를 props로 받거나 {fav}로 받을 수 있다.
@@ -27,24 +29,27 @@ nomard coders React JS Fundamentals Course
 this.setState(current => ({ count: current.count + 1 }));
 ```
 
-### 매순간 setState를 호출할 때 마다 react는 새로운 state와 함께 render을 호출
+### render 
+- 매순간 setState를 호출할 때 마다 react는 새로운 state와 함께 render()를 호출
 
 ### Mounting : component가 태어나는 것
 
-- 순서 constructor() -> render() -> componentDidMount()
+- 호출 순서 : constructor() -> render() -> componentDidMount()
 
 ### Updating : state를 변경할 때
 
-- 순서 render -> componentDidUpdate()
+- 호출 순서 : render() -> componentDidUpdate()
 
 ### Unmounting : component가 죽는 것
 
-- 순서 componentWillUnmount()
+- 호출 순서 : componentWillUnmount()
 
-### const { isLoading } = this.state; -> es6 문법으로 { }안은 객체
-
-8. gh-pages
-
+### state 가져오기 (ES6)
+{ }는 객체!
+```
+const { isLoading } = this.state;
+```
+### gh-pages
 
 ```
 npm install gh-pages -g
