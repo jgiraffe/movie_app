@@ -1,10 +1,6 @@
-# Movie App(React)
+# Movie App (nomard coders React JS Fundamentals Course)
 
-<https://jgiraffe.github.io/movie_app/> (ROUTING BONUS part는 github page에 적용되지 않았음)
-
-nomard coders React JS Fundamentals Course
-
-노마드 코더 리액트 JS 기본 과정 실습입니다.
+<https://jgiraffe.github.io/movie_app/>
 
 ## 공부한 내용
 
