@@ -35,7 +35,7 @@ const element = <h1>Hello, world!</h1>;
 <div> { foodILike.map(dish => (<Food key={dish.id} />))} </div>
 ```
 
-### 3. setState시 현재의 state에 접근하기 적절한 방법
+### 3. setState의 적절한 사용법 (현재의 state에 접근하기 적절한 방법)
 
 ```
 this.setState(current => ({ count: current.count + 1 }));
