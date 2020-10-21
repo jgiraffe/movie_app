@@ -8,7 +8,6 @@
 - react, prop-types, axios, gh-pages, react-router-dom
 
 ### 1. component, JSX
-- component 종류 : function, class
 - function component
 ```
 function 이름(props or {...//prop name}) { return (...) }
