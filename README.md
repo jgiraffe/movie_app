@@ -19,7 +19,7 @@
 - map 사용 예시
 
 ```
-   <div> { foodILike.map(dish => (<Food key={dish.id} />))} </div>
+<div> { foodILike.map(dish => (<Food key={dish.id} />))} </div>
 ```
 
 ### 2. setState시 현재의 state에 접근하기 적절한 방법
