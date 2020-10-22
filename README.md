@@ -6,11 +6,11 @@
 
 ### 0. library
 ```
-npm i react
-npm i prop-types
-npm i axios
-npm i gh-pages
-npm i react-router-dom
+$ npm i react
+$ npm i prop-types
+$ npm i axios
+$ npm i gh-pages
+$ npm i react-router-dom
 ```
 
 ### 1. component, JSX
@@ -70,7 +70,7 @@ const { isLoading } = this.state;
 ### 9. gh-pages
 
 ```
-npm install gh-pages -g
+$ npm install gh-pages -g
 ```
 package.json에 추가
 ```
@@ -81,9 +81,9 @@ package.json scrtipt에 추가
 "deploy": "gh-pages -d build",
 "predeploy": "npm run build"
 ```
-실행
+how to run
 ```
-npm run deploy
+$ npm run deploy
 ```
 ### 10. axios : http 통신 library
 비동기로 영화 정보를 가져오는 예시 
