@@ -6,13 +6,16 @@
 
 ### 0. library
 ```
-$ npm i react
-$ npm i prop-types
-$ npm i axios
-$ npm i gh-pages
-$ npm i react-router-dom
+$ npm install react
+$ npm install prop-types
+$ npm install axios
+$ npm install gh-pages
+$ npm install react-router-dom
 ```
-
+create react app
+```
+$ npx create-react-app movie_app
+```
 ### 1. component, JSX
 - function component
 ```
